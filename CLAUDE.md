@@ -126,3 +126,12 @@ The `state/` directory is the canonical operational model.
 Raw sources belong under `sources/`.
 
 Do not use raw transcripts as the only memory. Condense durable knowledge into canonical entities while preserving source references.
+
+
+## Project understanding
+
+Before reasoning about a repository, use /project-context. Repository documentation and guidelines are the primary authority for project intent: CLAUDE.md, README, docs, architecture/design docs, ADRs and contribution/development guides. Use code and tests to validate and enrich that understanding.
+
+## Claude Code runtime
+
+Claude Code is the reasoning/development runtime. Do not introduce a custom LLM driver. Master tooling should prepare context, manage state, discover/ingest sessions and support spawning Claude Code sessions when available.
