@@ -1,0 +1,15 @@
+version: 1
+
+entities:
+  project_context:
+    required: [project_id, purpose, sources, confidence, updated_at]
+  topic:
+    required: [id, title, type, status, sources]
+  commitment:
+    required: [id, action, status, sources]
+  dependency:
+    required: [id, from, relation, to, status, sources]
+  decision:
+    required: [id, statement, status, sources]
+  evidence:
+    required: [id, source_type, source_ref, observed_at]
