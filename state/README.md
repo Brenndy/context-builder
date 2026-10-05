@@ -1,14 +1,7 @@
 # Canonical state
 
-Store durable operational knowledge here.
+Durable Master knowledge lives here. Raw transcripts and imported source material belong under sources/.
 
-Suggested entities:
-- topics
-- commitments
-- dependencies
-- decisions
-- people
-- risks
-- open-loops
+Recommended layout: state/projects/, state/project-context/, state/topics/, state/commitments/, state/dependencies/, state/decisions/, state/evidence/, state/sessions/.
 
-Keep source references on entities so the state remains auditable.
+Every entity should retain source references and temporal metadata.
