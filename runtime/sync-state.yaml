@@ -1,0 +1,7 @@
+version: 1
+
+meetings: {}
+sessions: {}
+jira:
+  last_sync: null
+git: {}
