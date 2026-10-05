@@ -28,3 +28,12 @@ Claude Code is the intended reasoning engine. This repository contains the state
 9. External side effects require explicit authorization.
 
 See `docs/architecture.md` and `docs/domain-model.md`.
+
+
+## Project Context
+
+Master learns what a repository is for from the repository's own documentation and guidelines before relying on code inference. The /project-context skill builds a durable Project Context from CLAUDE.md, README, docs, architecture/design documents, ADRs and contribution guides, then uses code/configuration/tests as validation evidence.
+
+## Runtime model
+
+The user runs Claude Code normally. Master is a tooling and memory layer around Claude Code, not a replacement AI runtime. Master can prepare and spawn Claude Code sessions when supported, and can later ingest knowledge from both spawned and manually started sessions.
